@@ -1,0 +1,48 @@
+diff --unified --recursive a/binutils-2.23.2/bfd/configure b/binutils-2.23.2/bfd/configure
+--- a/binutils-2.23.2/bfd/configure	2017-11-18 11:33:45.643043270 +0100
++++ b/binutils-2.23.2/bfd/configure	2017-11-18 11:35:43.059800063 +0100
+@@ -12141,7 +12141,7 @@
+ 
+ 
+ 
+-GCC_WARN_CFLAGS="-W -Wall -Wstrict-prototypes -Wmissing-prototypes"
++GCC_WARN_CFLAGS="-Wall -Wstrict-prototypes -Wmissing-prototypes"
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ __GNUC__
+@@ -12175,11 +12175,6 @@
+   *) ;;
+ esac
+ 
+-# Enable -Werror by default when using gcc
+-if test "${GCC}" = yes -a -z "${ERROR_ON_WARNING}" ; then
+-    ERROR_ON_WARNING=yes
+-fi
+-
+ NO_WERROR=
+ if test "${ERROR_ON_WARNING}" = yes ; then
+     GCC_WARN_CFLAGS="$GCC_WARN_CFLAGS -Werror"
+diff --unified --recursive a/binutils-2.23.2/opcodes/configure b/binutils-2.23.2/opcodes/configure
+--- a/binutils-2.23.2/opcodes/configure	2017-11-18 11:33:45.787044199 +0100
++++ b/binutils-2.23.2/opcodes/configure	2017-11-18 11:35:55.187878216 +0100
+@@ -11490,7 +11490,7 @@
+ fi
+ 
+ 
+-GCC_WARN_CFLAGS="-W -Wall -Wstrict-prototypes -Wmissing-prototypes"
++GCC_WARN_CFLAGS="-Wall -Wstrict-prototypes -Wmissing-prototypes"
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ __GNUC__
+@@ -11524,11 +11524,6 @@
+   *) ;;
+ esac
+ 
+-# Enable -Werror by default when using gcc
+-if test "${GCC}" = yes -a -z "${ERROR_ON_WARNING}" ; then
+-    ERROR_ON_WARNING=yes
+-fi
+-
+ NO_WERROR=
+ if test "${ERROR_ON_WARNING}" = yes ; then
+     GCC_WARN_CFLAGS="$GCC_WARN_CFLAGS -Werror"
